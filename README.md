@@ -80,16 +80,4 @@ Contributions are welcome. Check out the [contributing guide](CONTRIBUTING.md) f
 
 ---
 
-## Disclaimer
 
-This tool offers a general sense of how media presents a topic. It's not meant for rigorous academic use or to replace critical reading. Always verify important claims from original sources.
-
----
-
-Made by \[Your Name]
-License: MIT – free to use, just don’t pretend you made it.
-
-```
-
-Let me know if you want to personalize this for your GitHub or want a dark theme screenshot preview section added too.
-```
