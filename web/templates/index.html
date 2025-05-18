@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bias Detector</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Bias Detector</h1>
+    <p>Type a topic and discover how different media outlets talk about it.</p>
+
+    <form id="bias-form">
+      <input type="text" id="topic-input" placeholder="e.g. Artificial Intelligence, Immigration Policy" required />
+      <button type="submit">Analyze</button>
+    </form>
+
+    <div id="summary" class="hidden">
+      <h2>Summary</h2>
+      <p id="overall-tone"></p>
+
+      <h3>Sentiment Distribution</h3>
+      <div class="meter-wrapper">
+        <canvas id="biasMeter"></canvas>
+      </div>
+      <p id="bias-label"></p>
+
+      <div class="card-grid" id="bias-cards"></div>
+    </div>
+
+    <div id="error-message" class="error hidden"></div>
+  </div>
+
+  <!-- Scripts in correct order -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

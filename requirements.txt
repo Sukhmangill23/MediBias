@@ -1,0 +1,8 @@
+flask>=2.0.0
+pandas
+nltk
+requests
+newspaper3k
+textblob
+python-dotenv
+vaderSentiment
